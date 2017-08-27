@@ -16,7 +16,7 @@ This of course implies that any changes made will be lost with the container, bu
 
 `run -d --name superset-td -p 8088:8088 superset-td`
 
-## Backend Persistance
+## Backend Persistence
 To persist the backend and application configuration, map a volume to the /superset point.
 If not found, the default Superset application and database backend will be deployed to this volume.
 
