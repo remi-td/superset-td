@@ -11,7 +11,7 @@ Uses the [Teradata Dialect for SQL Alchemy](https://github.com/Teradata/sqlalche
 
 ## Express setup
 By default, this image will setup a local Superset application and database backend at runtime, using its default [application](superset.cfg) and [admin](admin.cfg) settings.
-This of course implies that any changes made will be lost with the container, but this is good enough to get test the image. 
+This of course implies that any changes made will be lost with the container, but this is good enough to test the image. 
 
 `run -d --name superset-td -p 8088:8088 superset-td`
 
