@@ -14,8 +14,8 @@ else
 fi
 
 # If no Superset backend found - set it up
-if [ ! -f $SUPERSET_HOME/superset.db ]; then
-  echo "Setup Superset database with default admin account - Remember to change password!"
+if [ ! -f $SUPERSET_DB ]; then
+  echo "Setup Superset database with default admin account."
   source /etc/superset-defaults/admin.cfg
   #/bin/sh -c '/usr/bin/fabmanager create-admin --app superset --username $USERNAME --firstname $FIRSTNAME --lastname $LASTNAME --email $EMAIL --password $PASSWORD'
   /usr/bin/fabmanager create-admin --app superset --username $USERNAME --firstname $FIRSTNAME --lastname $LASTNAME --email $EMAIL --password $PASSWORD

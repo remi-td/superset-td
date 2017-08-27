@@ -2,6 +2,11 @@ FROM fedora:25
 
 # Application directory
 ENV SUPERSET_HOME /superset
+
+#Backend database reference - So far only SQLite file reference
+ENV SUPERSET_DB $SUPERSET_HOME/superset.db
+
+#Python path
 ENV PYTHONPATH $SUPERSET_HOME:$PYTHONPATH
 
 #Update system
