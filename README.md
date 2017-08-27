@@ -4,10 +4,11 @@ Uses the [Teradata Dialect for SQL Alchemy](https://github.com/Teradata/sqlalche
 Currently only supports SQLite database backend for superset metadata.
 
 ## Image build
-* Clone or Download this repository
+* Clone or Download this repository.
 * Download the [Teradata ODBC Drivers for Linux](http://downloads.teradata.com/download/connectivity/odbc-driver/linux) (you will need to register and accept the licence terms). And place the tar.gz file in this directory.
 * Optional: Edit the defaults for [application configuration options](superset.cfg) or [admin credentials](admin.cfg). These files will be used to setup application and create the metadata backend if no persistent Superset config is found.
 * Navigate to this directory and build the Docker image: 
+
 `docker build -t superset-td .`
 
 ## Express setup
@@ -27,12 +28,12 @@ If not found, the default Superset application and database backend will be depl
  (Default on a local deployment)
 * Login with the admin user and password. See defaults in [config file](admin.cfg).
 * Create the database connection:
-    * Go to Sources>Databases and click "Add a new record". E.g. http://localhost:8088/databaseview/add
-    * Enter a name for the Database connection
-    * Specify the [SQLAlchemy URL](http://docs.sqlalchemy.org/en/rel_1_0/core/engines.html#database-urls), specifying 'teradata' for the dialect. E.g `teradata://user:password@192.168.123.123/dbc`
+    * Go to Sources>Databases and click "Add a new record". E.g. http://localhost:8088/databaseview/add.
+    * Enter a name for the Database connection.
+    * Specify the [SQLAlchemy URL](http://docs.sqlalchemy.org/en/rel_1_0/core/engines.html#database-urls), specifying 'teradata' for the dialect. E.g `teradata://user:password@192.168.123.123/dbc`.
     * You may want to check "Expose in SQL Lab" to directly write queries in the SQL lab.
-    * Test/Save connection
+    * Test/Save connection.
 * Import tables/views:
-    * Go to Sources>Tables and click "Add a new record". E.g. http://localhost:8088/tablemodelview/add
-    * Select the database connection, schema (e.g. 'dbc'), table (e.g. 'tables')
+    * Go to Sources>Tables and click "Add a new record". E.g. http://localhost:8088/tablemodelview/add.
+    * Select the database connection, schema (e.g. 'dbc'), table (e.g. 'tables').
     * Click save and click on the table name to start editing a slice!
