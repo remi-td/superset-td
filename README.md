@@ -4,7 +4,7 @@ Uses the [Teradata Dialect for SQL Alchemy](https://github.com/Teradata/sqlalche
 
 ## Image build
 * Download this repository
-* Download the [Teradata ODBC Drivers for Linux](http://downloads.teradata.com/download/connectivity/odbc-driver/linux) (you will need to register and accept the licnce terms). And place the tar.gz file in this folder.
+* Download the [Teradata ODBC Drivers for Linux](http://downloads.teradata.com/download/connectivity/odbc-driver/linux) (you will need to register and accept the licence terms). And place the tar.gz file in this folder.
 * Optional: Edit the defaults for [application configuration options](superset.cfg) or [admin credentials](admin.cfg). These files will be used to setup application and create backend if no persistent superset config is found.
 * Build the image from this folder: 
 `docker build -t superset-td .`
