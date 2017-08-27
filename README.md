@@ -23,7 +23,7 @@ If not found, the default Superset application and database backend will be depl
 `docker run -it --name superset-td   -v /tmp/superset:/superset:z   -p 8088:8088 superset-td`
 
 ## Getting started
-* Open a web browser and point to the superset application at <hostname>:<port>. Default on a local deployment: http://localhost:8088
+* Open a web browser and point to the superset application at `<hostname>:<port>`. Default on a local deployment: http://localhost:8088
 * Login with the admin user and passwor. See defaults in [config file](admin.cfg).
 * Create the database connection:
     * Go to Sources>Databases and click "Add a new record". E.g. http://localhost:8088/databaseview/add
