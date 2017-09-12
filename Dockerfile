@@ -28,7 +28,7 @@ RUN pip3 install --no-cache-dir \
 	flask-appbuilder superset
 
 #Install TD SQL Alchemy
-RUN git clone https://github.com/RemiTurpaud/sqlalchemy-teradata.git /tmp/tdss
+RUN git clone -b superset https://github.com/RemiTurpaud/sqlalchemy-teradata.git /tmp/tdss
 RUN pip3 install -e /tmp/tdss
 
 #Install Teradata ODBC drivers
